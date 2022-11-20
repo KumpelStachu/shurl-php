@@ -4,5 +4,6 @@
 			"runtime": "vercel-php@0.5.2"
 		}
 	},
-	"routes": [{ "src": "/(.*)", "dest": "/api/router.php" }]
+	"rewrites": [{ "source": "/(.*)", "destination": "/api/router.php" }],
+	"devCommand": "php -S localhost:8000 api/router.php"
 }

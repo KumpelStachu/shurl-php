@@ -1,4 +1,3 @@
-<?php header("Cache-Control: public, max-age=86400, stale-while-revalidate=30"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
