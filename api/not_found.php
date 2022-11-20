@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  nie znaleziono strony
+  not found
 </body>
 
 </html>

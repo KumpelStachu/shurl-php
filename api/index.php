@@ -8,10 +8,7 @@
 </head>
 
 <body>
-  <?php
-  include 'nav.php';
-  // header("Cache-Control: public, max-age=31536000");
-  ?>
+  <?php include 'nav.php'; ?>
 
   <form method="POST">
     <h2>create shurl</h2>

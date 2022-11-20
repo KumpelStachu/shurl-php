@@ -1,3 +1,4 @@
+<?php header("Cache-Control: public, max-age=86400, stale-while-revalidate=30"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,10 +9,9 @@
 </head>
 
 <body>
-  <?php
-  include 'nav.php';
-  header("Cache-Control: public, max-age=86400, stale-while-revalidate=10");
-  ?>
+  <?php include 'nav.php'; ?>
+
+  <h4>updated at: <?php echo date('Y-m-d H:i:s'); ?></h4>
 
   <table border="1">
     <thead>
