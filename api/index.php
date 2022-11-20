@@ -48,7 +48,7 @@
     <input type="time" name="time" id="time" placeholder="time">
     <br>
     <label for="password">password</label>
-    <input type="password" name="password" id="password" placeholder="password" disabled>
+    <input type="password" name="password" id="password" placeholder="password">
     <br>
     <input type="checkbox" name="public" id="public" checked>
     <label for="public">public</label>

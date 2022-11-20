@@ -12,6 +12,11 @@ $query = $db->query(sprintf('SELECT * FROM `ShortUrl` WHERE `alias` = "%s"', $al
 if ($query && $query->num_rows == 1) {
   $row = $query->fetch_assoc();
 
+  if ($row['password'] != null && $row['password'] != @$_POST['password']) {
+    include 'dynamic_password.php';
+    return;
+  }
+
   $db->query(sprintf('UPDATE `ShortUrl` SET `visits` = %d WHERE `alias` = "%s"', intval($row['visits']) + 1, $alias));
 
   // header("Cache-Control: public, max-age=31536000, immutable");

@@ -33,7 +33,7 @@
       ?>
         <tr>
           <td><a href="/<?php echo $row['alias']; ?>"><?php echo $row['alias']; ?></a></td>
-          <td><a href="<?php echo $row['url']; ?>"><?php echo $row['url']; ?></a></td>
+          <td><a href="/<?php echo $row['alias']; ?>"><?php echo $row['password'] ? '*****' : $row['url']; ?></a></td>
           <td><?php echo $row['visits']; ?></td>
           <td><?php echo @$row['expires'] ?: 'never'; ?></td>
           <td><?php echo $row['createdAt']; ?></td>
